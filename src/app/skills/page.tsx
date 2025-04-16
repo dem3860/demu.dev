@@ -52,7 +52,7 @@ export default function Skills() {
           強み・PRを見る
         </Link>
         <Link
-          href="/s"
+          href="/"
           className="px-6 py-2 bg-cyan-600 hover:bg-cyan-700 text-white font-medium rounded-full text-sm transition duration-200 text-center"
         >
           自己紹介を見る
