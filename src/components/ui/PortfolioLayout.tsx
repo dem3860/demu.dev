@@ -18,7 +18,15 @@ export function PortfolioLayout({ title, subtitle, children }: Props) {
         </div>
         {children}
         <footer className="text-center text-xs text-gray-400 py-4 border-t border-gray-200 bg-white/70">
-          © 2025 Demura Yuto Portfolio
+          © 2025 Demura Yuto Portfolio　
+          <a
+            href="https://github.com/dem3860"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline ml-2"
+          >
+            GitHub
+          </a>
         </footer>
       </div>
     </main>
