@@ -1,20 +1,21 @@
-type Props = {
+// components/ui/Section.tsx
+type SectionProps = {
   title: string;
   borderColor?: string;
+  id?: string;
   children: React.ReactNode;
 };
 
 export function Section({
   title,
   borderColor = "border-gray-300",
+  id,
   children,
-}: Props) {
+}: SectionProps) {
   return (
-    <section>
-      <h2 className={`text-xl font-semibold mb-4 border-b pb-2 ${borderColor}`}>
-        {title}
-      </h2>
-      {children}
+    <section id={id} className={`border-l-4 pl-4 ${borderColor}`}>
+      <h2 className="text-xl font-bold mb-2">{title}</h2>
+      <div>{children}</div>
     </section>
   );
 }
