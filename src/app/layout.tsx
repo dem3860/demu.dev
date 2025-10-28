@@ -13,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className="scroll-smooth bg-white text-gray-800">{children}</body>
+      <body className="scroll-smooth bg-slate-900 text-slate-50 pt-16">
+        {children}
+      </body>
     </html>
   );
 }
