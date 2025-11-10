@@ -8,7 +8,6 @@ export const Profile = ({ profileRef }: profileProps) => {
   return (
     <AnimatedSection className="py-24 scroll-mt-10 px-6" ref={profileRef}>
       <div className="max-w-4xl mx-auto">
-        {/* セクションタイトル */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
             Profile
