@@ -38,7 +38,7 @@ export default function Home() {
             {/* メインタイトル */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 leading-tight">
               <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                Demura Yuto
+                Dem
               </span>
             </h1>
 
@@ -105,7 +105,7 @@ export default function Home() {
           </div>
 
           <p className="text-sm">
-            © {new Date().getFullYear()} Demura Yuto. All rights reserved.
+            © {new Date().getFullYear()} Dem. All rights reserved.
           </p>
         </footer>
       </div>
