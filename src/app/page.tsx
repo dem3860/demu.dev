@@ -5,17 +5,20 @@ import { Navbar } from "@/components/ui/NavBar";
 import { Profile } from "@/components/sections/Profile";
 import { Strength } from "@/components/sections/Strength";
 import { Skill } from "@/components/sections/Skill";
+import { Projects } from "@/components/sections/Projects";
+import { Articles } from "@/components/sections/Articles";
 import { Summary } from "@/components/sections/Summary";
 
 export default function Home() {
-  const profileRef = useRef<HTMLHeadingElement | null>(null);
+  const profileRef = useRef<HTMLElement | null>(null);
   const strengthsRef = useRef<HTMLElement | null>(null);
   const skillsRef = useRef<HTMLElement | null>(null);
+  const projectsRef = useRef<HTMLElement | null>(null);
+  const articlesRef = useRef<HTMLElement | null>(null);
   const summaryRef = useRef<HTMLElement | null>(null);
 
   return (
     <main className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-slate-50 min-h-screen">
-      {/* 背景のグラデーション装飾 */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
@@ -28,10 +31,11 @@ export default function Home() {
             about: profileRef,
             strengths: strengthsRef,
             skills: skillsRef,
+            projects: projectsRef,
+            articles: articlesRef,
             summary: summaryRef,
           }}
         />
-
         {/* ヒーローセクション */}
         <section className="relative min-h-[70vh] flex items-center justify-center px-6 py-16">
           <div className="max-w-4xl mx-auto text-center">
@@ -72,12 +76,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <Profile profileRef={profileRef} />
         <Strength strengthsRef={strengthsRef} />
         <Skill skillsRef={skillsRef} />
+        <Projects projectsRef={projectsRef} />
+        <Articles articlesRef={articlesRef} />
         <Summary summaryRef={summaryRef} />
-
         <footer className="text-center py-12 text-slate-400 border-t border-slate-700/50">
           {/* コンタクトボタン */}
           <div className="mb-6">
